@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Games Page</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="../index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about_me.html">About Me</a>
+            <a href="other.html">Other</a>
+        </div>
+        
+        <header>
+            <div class="flex">
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                </div>
+                <div class = "center text">
+                    <h1>William Reutmers coola hemsida</h1>
+                    <h2>Games Page</h2>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
+
+<script>
+    let open = false;
+
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        if (open){
+            closeNav();
+            return;
+        }
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        open = true;
+    }
+  
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        open = false;
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
