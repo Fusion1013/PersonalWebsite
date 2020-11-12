@@ -1,5 +1,7 @@
 'use strict';
 
+/* Constants used when generating the game board */
+/* NOTE: Changing the number of columns does not actually change the size of the canvas */
 const COLS = 10;
 const ROWS = 30;
 const BLOCK_SIZE = 30;
