@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home Page</title>
-        <link rel="stylesheet" href="../css/styles.css">
+        <title>Mini Painting Page</title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="stylesheet" href="../../css/image_styles.css">
     </head>
     <body>
         <div id="mySidebar" class="sidebar">
-            <a href="index.html">Home</a>
-            <button class="dropdown-btn">Games
-                <i class="arrow down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="snake_game/snake.html">-Snake</a>
-                <a href="tetris_game/tetris.html">-Tetris</a>
-                <a href="#">-Link 3</a>
-            </div>
-            <a href="mini_painting/minipainting.html">Mini Painting</a>
-            <a href="about_me.html">About Me</a>
-            <a href="other.html">Other</a>
+            <a href="../index.html">Home</a>
+            <a href="../games.html">Games</a>
+            <a href="../about_me.html">About Me</a>
+            <a href="../other.html">Other</a>
         </div>
         
         <header id="header">
             <div class="flex">
                 <div class = "center text">
                     <h1>William Reutmer</h1>
-                    <h2>Home Page</h2>
+                    <h2>Mini Painting Page</h2>
                 </div>
                 <div class="absolute">
                     <button class="openbtn" onclick="openNav()">&#9776;</button>
                 </div>
             </div>
         </header>
+
         <div id = "main">
-            <h1>Test</h1>
+            <div class="center">
+                <div class="responsive">
+                    <div class="gallery">
+                        <div class="title">Blue Beholder</div>
+                        <a target="_blank" href="images/beholder_blue.jpg">
+                            <img src="images/beholder_blue.jpg" alt="Blue Beholder">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <div class="title">Owlbear</div>
+                        <a target="_blank" href="images/Owlbear.jpg">
+                            <img src="images/Owlbear.jpg" alt="Owlbear">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <div class="title">Skeleton</div>
+                        <a target="_blank" href="images/Skeleton.jpg">
+                            <img src="images/Skeleton.jpg" alt="Skeleton">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
         </div>
     </body>
 </html>

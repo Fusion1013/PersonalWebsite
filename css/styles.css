@@ -28,6 +28,11 @@ div.center{
     text-align: center;
 }
 
+.absolute {
+    position: absolute;
+    margin: auto;
+}
+
 .highlight{
     background: red;
 }
